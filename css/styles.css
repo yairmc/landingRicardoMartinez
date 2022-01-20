@@ -1,0 +1,252 @@
+:root {
+    --primario: #084d6e;
+    --secundario: #1f8dba;
+    --texto: #aea04b;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem= 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: var(--primario);
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    color: var(--texto);
+}
+
+
+/* globales */
+
+.navegacion {
+    background-color: var(--secundario);
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 1rem 7rem;
+    text-align: center;
+}
+
+.navegacion__enlace--activo {
+    background-color: cornflowerblue;
+}
+
+.footer {
+    background-color: var(--secundario);
+    margin: 1rem 7rem;
+}
+
+.footer__text {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.navegacion,
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.navegacion,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* index */
+
+.contenedor--index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.imagen {
+    max-width: 70%;
+}
+
+.contenedorInformacion {
+    font-size: 2rem;
+    color: var(--texto);
+    grid-area: 1/3;
+}
+
+.contenedorImagen {
+    grid-area: 1/2;
+    margin: 2rem 2rem;
+}
+
+
+/* aficiones */
+
+.contenedor--aficiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contenedor--box {
+    grid-area: 1/2;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--texto);
+    gap: 40px;
+}
+
+.contenedor--pintura {
+    grid-area: 2/2;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--texto);
+    gap: 40px;
+}
+
+.contenedor--viaje {
+    grid-area: 3/2;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--texto);
+    gap: 40px;
+}
+
+
+/* contactame */
+
+.formulario {
+    font-size: 3rem;
+    background-color: var(--secundario);
+    width: min(100rem, 100%);
+    margin: 5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--texto);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton {
+    width: 100%;
+}
+
+
+/* seriesPeliculas */
+
+.contenedor--series {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 2.5rem;
+    border-bottom: 1rem solid #aea04b;
+}
+
+.contenedor--peliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 2.5rem;
+}
+
+.imagenSeries {
+    max-width: 100%;
+    margin: 5rem 0;
+}
+
+.imagenPeliculas {
+    max-width: 100%;
+    margin: 5rem 0;
+}
+
+.serie1 {
+    grid-area: 1/2;
+}
+
+.cont1 {
+    grid-area: 1/3;
+    margin: 5rem 0;
+}
+
+.serie2 {
+    grid-area: 2/2;
+}
+
+.cont2 {
+    grid-area: 2/3;
+    margin: 5rem 0;
+}
+
+.serie3 {
+    grid-area: 3/2;
+}
+
+.cont3 {
+    grid-area: 3/3;
+    margin: 5rem 0;
+}
+
+.peli1 {
+    grid-area: 1/2;
+}
+
+.cont4 {
+    grid-area: 1/3;
+    margin: 5rem 0;
+}
+
+.peli2 {
+    grid-area: 2/2;
+}
+
+.cont5 {
+    grid-area: 2/3;
+    margin: 5rem 0;
+}
+
+.peli3 {
+    grid-area: 3/2;
+}
+
+.cont6 {
+    grid-area: 3/3;
+    margin: 5rem 0;
+}
